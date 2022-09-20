@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: darkblue;
+            font-family:Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo</h1>
+    <p>Já me livrei da maldição</p>
+    <script>
+        var n1 = Number.parseFloat(prompt('Digite um número'))
+        //Converter de string para número. Number.parseInt é para números inteiros e Number.parseFloat para números com virgula se você quiser deixar que o javascript resolva pra vc use só Number
+        var n2 = Number.parseFloat(prompt('Digite outro número'))
+        //Para converter de número para string utilizamos String(soma) ou soma.toString
+        var soma = n1 + n2
+        //Uma maneira de mais organizada é fazer templeteString trocando as aspas por crase e em vez de fazer concatenação fazemos assim ${soma} 
+        
+        alert(`A soma de ${n1} mais ${n2} é ${soma}.`)
+    </script>
+</body>
+</html>
