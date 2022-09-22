@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        body{
+            background-color: lightskyblue;
+            font: normal 1.2em normal Arial;
+            color: white;
+        }
+        div{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>DOM</h1>
+    <p>Iniciando os estudos sobre o DOM</p>
+    <p>Aprendendo a usar <strong>DOM</strong></p>
+    <div id="msg" name="Msg" class="div">Clique em mim</div>
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        var p2 = document.getElementById('msg')
+        p2.style = "border: 2px solid black;"
+        var t = document.querySelector('h1')
+        document.write(t.innerText)
+        var p3 = document.getElementsByName('Msg')[0]
+        p3.style.background = "yellow"
+        var p4 = document.getElementsByClassName('div')[0]
+        p4.style.color = "black"
+    </script>
 </body>
 </html>
