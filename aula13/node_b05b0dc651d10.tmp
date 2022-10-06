@@ -1,4 +1,4 @@
-var num = 0
+var num = 1
 var passo = 1
 do {
     if (passo < num){
