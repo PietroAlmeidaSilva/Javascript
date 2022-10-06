@@ -1,11 +1,8 @@
-var num = 0
 var passo = 1
 do {
-    if (passo < num){
-        console.log(`Passo ${passo}`)
-        passo++
-    }
-} while (passo <= num);
+    console.log(`Passo ${passo}`)
+    passo++
+} while (passo <= 10);
 /*
 while (passo <= 100) {
     console.log(`Passo ${passo}`)
